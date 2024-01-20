@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<title>ConSE Filters</title>
+Thanks for clicking on me
+<h2>What do we filter out?</h2>
+When you search something, for example, "what is a water bottle?", the following are filtered out of your search:<br />
+<img src="https://cdn.glitch.global/6292508a-e6bd-4f35-8a97-e227633eba00/filters.jpg?v=1705669065121" alt = "W̶h̶a̶t̶ i̶s̶ a water bottle?̶" /><br />
+So in other words, we filter out "what is", "who is", "a", "an", spaces, punctuation, and more just to get what you're searching for.<br />
+So you're just left with "waterbottle". More on that later.
+<h2>So how does it actually work?</h2>
+Well, we use the JavaScript <code>fetch</code> API to get JSON (<b>J</b>ava<b>S</b>cript <b>O</b>bject <b>N</b>otation) files in the <code>/res</code> directory that contain basic information about the site. For example:
+<pre>
+{
+  <span class="key">"name"</span>: <span class="value">"Concise Search Engine"</span>,
+  <span class="key">"description"</span>: <span class="value">"It's a search engine."</span>,
+  <span class="key">"url"</span>: <span class="value">"https://con-se.glitch.me/"</span>
+}
+</pre>
+Anyway, "waterbottle" from earlier. So now that we have that, we look for files in the /res folder that match <code>waterbottle.json</code>. If we find it, we display its JSON contents to you. If not, that's how you get the "no results" page.
+<style>
+  body{
+    font-family: sans-serif;
+  }
+  .key{
+    color: #9445B0;
+  }
+  .value{
+    color: #15959C;
+  }
+  img{
+    width: 400px;
+  }
+  code{
+    background-color: lightgrey;
+    padding: 3px;
+  }
+</style>

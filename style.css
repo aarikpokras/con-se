@@ -1,0 +1,43 @@
+input{
+  border: 1px solid black;
+  font-family: sans-serif;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  font-size: 10pt;
+}
+input:focus{
+  outline: none;
+}
+p{
+  display: inline;
+  font-family: sans-serif;
+}
+#value{
+  visibility: hidden;
+}
+#apdata-title{
+  color: #03119E;
+  font-size: 14pt;
+}
+#apdata-url{
+  color: grey;
+  font-size: 10pt;
+}
+#apdata-des{
+  color: green;
+}
+footer{
+  background-color: azure;
+  height: 40px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  font-family: sans-serif;
+  padding: 10px;
+  bottom: 0;
+  left: 0;
+}
